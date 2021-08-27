@@ -6,7 +6,7 @@ global with sharing class RestCaseController {
     
     global static List<Case> getOpenCases()
     {
-        String CompanyName=RestContext.request.params.get('CompanyName');
+        String CompanyName = RestContext.request.params.get('CompanyName');
         Account company =[ Select Id,name from Account where name = : CompanyName];
         List <Case> cases = [Select id,OwnerId,CaseNumber,Origin,Status from case where AccountId = :company.Id ];
         return cases;
@@ -28,8 +28,8 @@ global with sharing class RestCaseController {
    a.Name =acctName;
    a.Description=descr;
    insert a;
-   return 'Done';
-   }
-    
+   return 'Record Inserted';
+
+    }
 
 }
