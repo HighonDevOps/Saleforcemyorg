@@ -1,0 +1,16 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1> Welvome to my new visualpage on salesforce by salesforce developer</h1>
+<br/>
+  <br/>
+  
+  <b>This is your new Page</b>
+  <br/>
+  
+  
+  you name is : {!$User.FirstName}
+  
+  <apex:image url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTboI5fkXI-7o5HD52EgWExCU_wirBiVJeo6g-_rLryWY5C2BpC&usqp=CAU"/>
+  
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
